@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Example Voting App
 
 A simple distributed application running across multiple Docker containers.
@@ -63,3 +64,7 @@ The voting application only accepts one vote per client browser. It does not reg
 This isn't an example of a properly architected perfectly designed distributed app... it's just a simple
 example of the various types of pieces and languages you might see (queues, persistent data, etc), and how to
 deal with them in Docker at a basic level.
+=======
+# my-example-voting-app
+This repository demonstrates the deployment and orchestration of a multi-container application using Docker Compose. It serves as an example of designing and managing a scalable, layered architecture by integrating various services into a cohesive, functional system.
+>>>>>>> 79dd1a2b485a78ca5953740710d10865292a6c4d
