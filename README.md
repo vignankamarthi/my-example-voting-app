@@ -1,7 +1,7 @@
 <<<<<<< HEAD
-# Example Voting App
+# My Example Voting App
 
-A simple distributed application running across multiple Docker containers.
+This repository was created by copying starter code from the `example-voting-app` repository. It demonstrates the deployment and orchestration of a multi-container application using Docker Compose. The application is designed to showcase a scalable and distributed architecture by integrating multiple services into a cohesive system.
 
 ## Getting started
 
