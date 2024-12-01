@@ -8,6 +8,8 @@ services:
 
   db:
     image: postgres:9.4 # Pulling PostgreSQL version 9.4 from Docker Hub
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust # Allows all connections without a password
     networks:
       - default
 
@@ -15,7 +17,7 @@ services:
     build:
       context: ./result # Path to the folder containing the Dockerfile for 'result'
     ports:
-      - "5002:80"
+      - "5002:80" # Map port 5002 on the host to port 80 in the container
     networks:
       - default
 
@@ -23,7 +25,7 @@ services:
     build:
       context: ./vote # Path to the folder containing the Dockerfile for 'vote'
     ports:
-      - "5001:80"
+      - "5001:80" # Map port 5001 on the host to port 80 in the container
     networks:
       - default
 
