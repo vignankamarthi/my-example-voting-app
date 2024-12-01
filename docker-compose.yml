@@ -9,7 +9,8 @@ services:
   db:
     image: postgres:9.4 # Pulling PostgreSQL version 9.4 from Docker Hub
     environment:
-      POSTGRES_HOST_AUTH_METHOD: trust # Allows all connections without a password
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
     networks:
       - default
 
